@@ -79,6 +79,14 @@
       font-size: 18px;
     }
 
+    .punishment {
+      font-size: 14px;
+      color: #ccc;
+      margin-top: 6px;
+      padding-left: 10px;
+      border-left: 2px solid #444;
+    }
+
     .notes {
       margin-top: 30px;
       font-size: 16px;
@@ -113,21 +121,68 @@
   <section class="rules">
     <h2>Rules</h2>
     <ol class="rule-list">
-      <li><strong>Advertising in any form is prohibited.</strong> This includes any mention, display, or hint towards third-party resources, brands, products, services, servers, groups, channels, etc., including text, images, videos, links (including shortened), QR codes, nicknames, statuses, avatars, and background images. Any attempts to disguise, distort, or hint at such content are violations.</li>
-      <li><strong>NSFW and NSFL content is prohibited.</strong> This includes sexual materials, pornography, depictions of violence, dismemberment, corpses, torture, cruelty, or any shocking/disturbing materials. All formats are prohibited — photos, videos, text, links, sounds, ASCII art, etc.</li>
-      <li><strong>Spam and flooding are prohibited.</strong> Spam means sending a large number of identical or meaningless messages, symbols, emojis, links, images, or mentions in a short period of time. Flooding is cluttering chat with disruptive content, including in voice channels.</li>
-      <li><strong>Begging is prohibited.</strong> Any requests for gifts, transfers, trades, donations, etc., even as a joke or in a disguised form.</li>
-      <li><strong>Gambling for money or valuables is prohibited.</strong> This includes real and virtual currencies, in-game items, accounts, etc. Lotteries, bets, and raffles requiring an entry are banned.</li>
-      <li><strong>Sharing personal information and blackmail are prohibited.</strong> Personal data includes real names, addresses, phone numbers, emails, IPs, photos, documents, passwords, private conversations, etc. Even if the data is publicly available elsewhere, sharing it here is forbidden. Threatening to reveal it is blackmail.</li>
-      <li><strong>Bypassing restrictions is prohibited.</strong> This includes creating alternate accounts, using someone else's account, or evading bans/mutes in any way.</li>
-      <li><strong>Hate speech or provocation based on discrimination is prohibited.</strong> This includes any form of humiliation or discrimination based on nationality, race, religion, gender, sexual orientation, appearance, age, profession, etc. Jokes, memes, and "sarcasm" count as violations.</li>
-      <li><strong>Unjustified tagging of staff is prohibited.</strong> Mentioning moderators, administrators, or developers is only allowed for valid reasons such as rule violations or technical issues.</li>
-      <li><strong>Insulting the administration, developers, or editors is prohibited.</strong> This includes direct or indirect insults, mockery, or attempts to undermine the project's authority.</li>
-      <li><strong>Copying someone else’s profile is prohibited.</strong> This includes nicknames, avatars, statuses, or designs that imitate another member to impersonate them. Punishment — mute until the profile is changed.</li>
-      <li><strong>Provoking personal conflicts is prohibited.</strong> This includes personal attacks, discussions of private lives, intentionally starting or supporting quarrels.</li>
-      <li><strong>Political discussion is prohibited.</strong> This includes mentioning political parties, figures, events, slogans, or symbols, regardless of context.</li>
-      <li><strong>Insulting relatives and aggressive behavior are prohibited.</strong> This includes insults towards family or close ones, threats, intimidation, or pressure.</li>
-      <li><strong>Buying, selling, or trading is prohibited.</strong> This includes real and virtual goods, in-game items, accounts, services, transfers, codes, and activation keys. Any commercial activity bypassing rules is a violation.</li>
+      <li>
+        <strong>Advertising in any form is prohibited.</strong> 
+        This includes any mention, display, or hint towards third-party resources, brands, products, services, servers, groups, channels, etc.
+        <div class="punishment">Punishment: Permanent ban without warnings.</div>
+      </li>
+      <li>
+        <strong>NSFW and NSFL content is prohibited.</strong> 
+        This includes sexual materials, pornography, depictions of violence, corpses, torture, cruelty, or shocking content. 
+        <div class="punishment">Punishment: Permanent ban.</div>
+      </li>
+      <li>
+        <strong>Spam and flooding are prohibited.</strong> 
+        <div class="punishment">Punishment: 1st time — mute 30 min; 2nd — mute 1 day; repeat — 7 days ban.</div>
+      </li>
+      <li>
+        <strong>Begging is prohibited.</strong> 
+        <div class="punishment">Punishment: Warn → repeat — mute 12h → 3 warns = 7 days ban.</div>
+      </li>
+      <li>
+        <strong>Gambling for money or valuables is prohibited.</strong> 
+        <div class="punishment">Punishment: Permanent ban.</div>
+      </li>
+      <li>
+        <strong>Sharing personal information and blackmail are prohibited.</strong> 
+        <div class="punishment">Punishment: Permanent ban.</div>
+      </li>
+      <li>
+        <strong>Bypassing restrictions is prohibited.</strong> 
+        <div class="punishment">Punishment: Permanent ban.</div>
+      </li>
+      <li>
+        <strong>Hate speech or provocation based on discrimination is prohibited.</strong> 
+        <div class="punishment">Punishment: 1st — mute 1 day; 2nd — mute 7 days; repeat — permanent ban.</div>
+      </li>
+      <li>
+        <strong>Unjustified tagging of staff is prohibited.</strong> 
+        <div class="punishment">Punishment: Warn → repeat — mute 12h.</div>
+      </li>
+      <li>
+        <strong>Insulting the administration, developers, or editors is prohibited.</strong> 
+        <div class="punishment">Punishment: 1st — mute 3 days; 2nd — 30 days ban; repeat — permanent ban.</div>
+      </li>
+      <li>
+        <strong>Copying someone else’s profile is prohibited.</strong> 
+        <div class="punishment">Punishment: Mute until profile change → repeat — 7 days ban.</div>
+      </li>
+      <li>
+        <strong>Provoking personal conflicts is prohibited.</strong> 
+        <div class="punishment">Punishment: 1st — mute 12h; 2nd — mute 3 days; repeat — 14 days ban.</div>
+      </li>
+      <li>
+        <strong>Political discussion is prohibited.</strong> 
+        <div class="punishment">Punishment: Warn → mute 1 day → repeat — 7 days ban.</div>
+      </li>
+      <li>
+        <strong>Insulting relatives and aggressive behavior are prohibited.</strong> 
+        <div class="punishment">Punishment: 1st — mute 3 days; 2nd — 14 days ban; repeat — permanent ban.</div>
+      </li>
+      <li>
+        <strong>Buying, selling, or trading is prohibited.</strong> 
+        <div class="punishment">Punishment: Warn → mute 3 days → repeat — permanent ban.</div>
+      </li>
     </ol>
 
     <div class="notes">
@@ -138,6 +193,7 @@
         <li>If a situation is not explicitly described, staff has the right to decide based on similar existing rules.</li>
         <li>The administration reserves the right to change the rules without prior notice.</li>
         <li>Not knowing the rules does not exempt from responsibility.</li>
+        <li>3 warns = automatic ban.</li>
       </ul>
     </div>
   </section>
